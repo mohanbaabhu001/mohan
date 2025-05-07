@@ -1,0 +1,82 @@
+/* Reset and base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #1e1e2f;
+  color: #e0e0e0;
+}
+
+/* App Container */
+.App {
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Backup Viewer Header */
+h2 {
+  font-size: 2rem;
+  color: #ffd369;
+  margin-bottom: 1rem;
+}
+
+/* Error Text */
+.error {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+/* Backup List Styles */
+.backup-viewer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+.backup-viewer li {
+  background-color: #2f2f4f;
+  margin: 0.75rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #f1f1f1;
+}
+
+.backup-viewer li ul {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.backup-viewer li ul li {
+  font-size: 0.95rem;
+  color: #bdc3c7;
+}
+
+/* Optional navigation link */
+nav ul {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+nav ul li a {
+  color: #ffd369;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffae00;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .backup-viewer ul {
+    padding: 0 1rem;
+  }
+}

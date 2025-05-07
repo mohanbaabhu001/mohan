@@ -1,0 +1,5 @@
+/api/store
+/api/fetch
+/api/delete
+/api/backup
+/api/backups
