@@ -5,8 +5,7 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-      - cd text-storage-project
-      - cd First-App-FE
+      - cd text-storage-project/First-App-FE
       - echo Installing frontend dependencies...
       - npm install
       - echo Building APP
@@ -18,5 +17,5 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: First-App-FE/build
+  base-directory: text-storage-project/First-App-FE/build
   name: build.zip
