@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - cd text-storage-project/Second-App-FE
+      - echo Installing frontend dependencies...
+      - npm install
+      - echo Building APP
+      - npm run build
+      - cp appspec.yml build/
+      - chmod -R +x scripts/
+      - cp -r scripts/ build/
+      
+artifacts:
+  files:
+    - '**/*'
+  base-directory: text-storage-project/Second-App-FE/build
+  name: build.zip
